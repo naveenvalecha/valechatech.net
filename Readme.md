@@ -1,0 +1,1 @@
+[![Build Status](https://travis-ci.org/naveenvalecha/valechatech.net.svg?branch=source)](https://travis-ci.org/naveenvalecha/valechatech.net)

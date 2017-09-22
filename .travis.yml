@@ -1,0 +1,24 @@
+sudo: true
+language: go
+go:
+  - 1.8
+
+# Install hugo. Clean and don't fail
+install:
+  - go get -v github.com/spf13/hugo
+  - rm -rf public || exit 0
+
+# Build the website
+script:
+  - pip install Pygments --user
+  - hugo --source .
+
+# Deploy to GitHub pages
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: public
+# Set in travis-ci.org dashboard
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: gh-pages
