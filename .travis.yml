@@ -21,4 +21,5 @@ deploy:
 # Set in travis-ci.org dashboard
   github_token: $GITHUB_TOKEN
   on:
-    branch: gh-pages
+    branch: source
+    all_branches: true
