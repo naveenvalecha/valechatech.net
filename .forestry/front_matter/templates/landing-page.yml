@@ -1,0 +1,27 @@
+---
+hide_body: false
+fields:
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+  config:
+    required: true
+- type: textarea
+  name: description
+  label: Description
+  config:
+    wysiwyg: true
+    required: true
+- type: file
+  name: banner_image
+  label: Hero Image
+  description: 'Dimensions: 1200px by 580px'
+  config:
+    maxSize: '2'
+- name: layout
+  label: Layout
+  type: text
+  hidden: true
+  default: home
